@@ -1,33 +1,162 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClInclude Include="pGnuPlotU.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotGraph.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="FRead.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="SigGenerator.h">
+      <Filter>SigGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Sinusoidal.h">
+      <Filter>SigGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CSig.h" />
+    <ClInclude Include="complextype.h" />
+    <ClInclude Include="Data.h">
+      <Filter>Sig</Filter>
+    </ClInclude>
+    <ClInclude Include="Sig.h">
+      <Filter>Sig</Filter>
+    </ClInclude>
+    <ClInclude Include="is_complex.h">
+      <Filter>Util\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="Analog.h">
+      <Filter>Sig</Filter>
+    </ClInclude>
+    <ClInclude Include="Slot.h">
+      <Filter>Sig</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Sig</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="Channel.h">
+      <Filter>Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Util\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameSchema.h" />
+    <ClInclude Include="DemodTop.h" />
+    <ClInclude Include="wrapFFT.h">
+      <Filter>SigProc\FFT\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="procFFT.h">
+      <Filter>SigProc\FFT</Filter>
+    </ClInclude>
+    <ClInclude Include="Processor.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClCompile Include="pGnuPlotU.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotGraph.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="FRead.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="SigGenerator.cpp">
+      <Filter>SigGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Sinusoidal.cpp">
+      <Filter>SigGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CSig.cpp" />
+    <ClCompile Include="Data.cpp">
+      <Filter>Sig</Filter>
+    </ClCompile>
+    <ClCompile Include="Sig.cpp">
+      <Filter>Sig</Filter>
+    </ClCompile>
+    <ClCompile Include="Analog.cpp">
+      <Filter>Sig</Filter>
+    </ClCompile>
+    <ClCompile Include="Display.cpp">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="Channel.cpp">
+      <Filter>Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp">
+      <Filter>Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Util\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameSchema.cpp" />
+    <ClCompile Include="DemodTop.cpp" />
+    <ClCompile Include="wrapFFT.cpp">
+      <Filter>SigProc\FFT\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="procFFT.cpp">
+      <Filter>SigProc\FFT</Filter>
+    </ClCompile>
+    <ClCompile Include="Processor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{73a99ed2-c851-4e4d-9792-ba0faa457f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{ffe8c88d-0a95-4711-8604-372b920aea56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SigGen">
+      <UniqueIdentifier>{3becab0c-e24a-4fad-b95c-04ae13c11841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sig">
+      <UniqueIdentifier>{a87a1d4e-f31d-418e-9c8c-443b172a6c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{e4c398b8-6248-4814-be32-8aea669dde16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\detail">
+      <UniqueIdentifier>{6fa90023-aaeb-4287-8d3e-8e5972863e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="display">
+      <UniqueIdentifier>{64a128b9-0df9-4a94-a793-8a0e2434b9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Channel">
+      <UniqueIdentifier>{f53137ac-7d7e-4100-85ed-a36cd7a42db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\interface">
+      <UniqueIdentifier>{c185fd33-7524-489e-9b51-a9c135daec01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demod">
+      <UniqueIdentifier>{2b90c8b8-1f10-438a-a8ec-e710a34e44a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SigProc">
+      <UniqueIdentifier>{25c00416-cabb-4190-a93f-6ebfc5c87e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SigProc\FFT">
+      <UniqueIdentifier>{3cac840e-1263-4514-abab-5f6d0449bbc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SigProc\FFT\impl">
+      <UniqueIdentifier>{4bf1c094-4c49-45ea-8fa0-078b61860f3a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
