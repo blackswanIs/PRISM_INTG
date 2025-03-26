@@ -27,7 +27,7 @@ namespace alg
 		
 		void initialize(IQ_Bufsf& data, Processor* proc)
 		{
-			proc->initialize(100);
+			//proc->initialize(100);
 		}
 
 		void initializes(IQ_Bufsf& data)
@@ -38,8 +38,8 @@ namespace alg
 		template<class Processor, class... ProcTypes>
 		void initializes(IQ_Bufsf& data, Processor* firstProc, ProcTypes... procs)
 		{
-			initialize(data, firstProc);
-			initializes(data, procs...);
+			//initialize(data, firstProc);
+			//initializes(data, procs...);
 		}
 
 		void execute()
@@ -47,7 +47,7 @@ namespace alg
 			IQ_Bufsf temp(100);
 			auto resampleModule = std::make_unique<Resampler>();
 
-			initializes(temp, resampleModule.get(), resampleModule.get());
+			//initializes(temp, resampleModule.get(), resampleModule.get());
 
 		}
 	};
